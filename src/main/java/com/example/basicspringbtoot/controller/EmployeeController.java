@@ -11,6 +11,7 @@ public class EmployeeController {
 
     @GetMapping("/showMessage")
     public String showMessage(@RequestParam String name) throws Exception {
+        System.out.println("showMessage invoked");
         return "Another message for: "+name;
     }
 
